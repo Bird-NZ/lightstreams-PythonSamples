@@ -9,14 +9,7 @@ Created on Mon Jun  1 10:10:37 2020
 #Grant permissions
 ##################
 import requests
-#import sys
 
-'''
-ACL:  0xF15aCA55A3D8E14f59e10CAd6f93bC29Bf2710ff
-Meta:  QmUhMoFt8cJDzJwXoEg34WczprtF5XJJ5ABJMcf46LjC6R
-Main Acc: 0x2B6977f493463E49C23340875C10df87B34caF32
-2nd Acc: 0x2ef9Cd304aAe11e9720cfD4978D155a121d17fDB
-'''
 
 Acl = #'File ACL'
 Owner = #'account address of file's owner'
@@ -25,18 +18,18 @@ To = #'account address to be granted permissions'
 Permissions = #'permission type' "read" "write" "admin" "noaccess"
 
 #get token for account
-grantURL = "https://gateway.sirius.lightstreams.io/acl/grant"
+grant_URL = "https://gateway.sirius.lightstreams.io/acl/grant"
 #signinURL = "http://localhost:9091/user/signin"
 
-grantQuerystring = {"acl": Acl,
+grant_Querystring = {"acl": Acl,
                     "owner": Owner,
                     "password": Password,
                     "to": To,
                     "permission": Permissions}
 
 grant_Response = requests.request("POST", 
-                                  grantURL, 
-                                  json=grantQuerystring)
+                                  grant_URL, 
+                                  json=grant_Querystring)
 
 print ('Grant response code: ',grant_Response.status_code)
 

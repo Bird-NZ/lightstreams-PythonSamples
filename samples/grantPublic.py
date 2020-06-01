@@ -9,14 +9,6 @@ Created on Mon Jun  1 16:11:12 2020
 #grantPublic
 ##################
 import requests
-#import sys
-
-'''
-ACL:  0xF15aCA55A3D8E14f59e10CAd6f93bC29Bf2710ff
-Meta:  QmUhMoFt8cJDzJwXoEg34WczprtF5XJJ5ABJMcf46LjC6R
-Main Acc: 0x2B6977f493463E49C23340875C10df87B34caF32
-2nd Acc: 0x2ef9Cd304aAe11e9720cfD4978D155a121d17fDB
-'''
 
 Acl = #'File ACL'
 Owner = #'account address of file's owner'

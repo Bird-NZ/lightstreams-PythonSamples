@@ -4,8 +4,6 @@ Created on Sat May 30 17:43:21 2020
 
 @author: Mat
 """
-#Account = '0x2ef9Cd304aAe11e9720cfD4978D155a121d17fDB'
-#Meta = 'QmUhMoFt8cJDzJwXoEg34WczprtF5XJJ5ABJMcf46LjC6R'
 
 ##################
 #Stream data
@@ -18,14 +16,14 @@ Password = #'password to owners account'
 Meta = #"Meta address"
 
 #get token for account
-signinURL = "https://gateway.sirius.lightstreams.io/user/signin"
+signin_URL = "https://gateway.sirius.lightstreams.io/user/signin"
 #signinURL = "http://localhost:9091/user/signin"
 
-signinQuerystring = {"account":Account,
-               "password": Password}
+signin_Querystring = {"account":Account,
+                     "password": Password}
 signin_Response = requests.request("POST", 
-                                  signinURL, 
-                                  json=signinQuerystring)
+                                  signin_URL, 
+                                  json=signin_Querystring)
 
 print ('Get account token status code: ',signin_Response.status_code)
 

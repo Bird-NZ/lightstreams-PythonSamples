@@ -11,7 +11,7 @@ Created on Fri May 29 07:32:26 2020
 
 import requests
 
-Meta = #<mata address>
+Meta = #<meta address>
 Owner = #<owner address>
 FileLocation = #<file location>
 

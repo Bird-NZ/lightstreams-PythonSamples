@@ -4,16 +4,16 @@
 import requests
 
 
-signupURL = "https://gateway.sirius.lightstreams.io/user/signup"
-#signupURL = "http://192.168.1.7:9091/user/signup"
+signup_URL = "https://gateway.sirius.lightstreams.io/user/signup"
+#signupURL = "http://localhost:9091/user/signup"
 
 Password = #<password>
 
-signupQuerystring = {"password": Password}
-signupResponse = requests.request("POST",
-                                  signupURL,
-                                  json=signupQuerystring)
+signup_Querystring = {"password": Password}
+signup_Response = requests.request("POST",
+                                  signup_URL,
+                                  json=signup_Querystring)
 
-print (signupResponse.status_code)
-signupData = signupResponse.json()
-print (signupData['account'])
+print (signup_Response.status_code)
+signup_Data = signup_Response.json()
+print (signup_Data['account'])

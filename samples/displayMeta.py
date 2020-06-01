@@ -4,7 +4,6 @@ Created on Fri May 29 07:36:29 2020
 
 @author: Mat
 """
-#Meta = "QmUhMoFt8cJDzJwXoEg34WczprtF5XJJ5ABJMcf46LjC6R"
 
 #######################
 #Display Meta
@@ -28,6 +27,6 @@ fetchMeta_Response = requests.request("GET",
 #check status of POST
 print(fetchMeta_Response.status_code)
 
-#Json
-fetchMetaData = fetchMeta_Response.json()
+#format with Json() into dict
+fetchMeta_Data = fetchMeta_Response.json()
 

@@ -2,16 +2,15 @@
 """
 Created on Thu May 28 22:58:40 2020
 
-@author: OEM
+@author: Mat
 """
 
-
 #################
-#Transfer
+#Transfer funds
 #################
 import requests
 
-transferURL = "https://gateway.sirius.lightstreams.io/wallet/transfer"
+transfer_URL = "https://gateway.sirius.lightstreams.io/wallet/transfer"
 #transferURL = "http://localhost:9091/wallet/transfer"
 
 From = #<from address>
@@ -19,17 +18,15 @@ Password = #<password>
 To = #<to address>
 Amount = #<amout of wei>
 
-transferQuerystring = {
-    "from": From,
-    "password": Password,
-    "to": To,
-    "amount_wei": Amount
-    }
+transfer_Querystring = {"from": From,
+                        "password": Password,
+                        "to": To,
+                        "amount_wei": Amount}
 
-transferResponse = requests.request("POST", 
-                                  transferURL, 
-                                  json=transferQuerystring)
+transfer_Response = requests.request("POST", 
+                                  transfer_URL, 
+                                  json=transfer_Querystring)
 
-transferResponseData = transferResponse.json()
+transfer_Data = transfer_Response.json()
 
-print(transferResponse.status_code)
+print(transfer_Response.status_code)
