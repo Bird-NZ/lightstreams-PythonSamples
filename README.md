@@ -1,7 +1,7 @@
 # lightstreams-PythonSamples
  Samples of python code to access the lightstreams APIs
 
-Using teh API doco found here: https://docs-api.lightstreams.network/ to work with the lightstreams network APIs.
+Using the API doco found here: https://docs-api.lightstreams.network/ to work with the lightstreams network APIs.
 
 All samples pointed to the test network gateway here: @ https://gateway.sirius.lightstreams.io.
 
